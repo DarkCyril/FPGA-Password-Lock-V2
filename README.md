@@ -32,6 +32,13 @@ The project was developed as a digital design learning project focused on:
 
 ---
 
+## How to Run
+1. Open Quartus Prime
+2. Load project from /src
+3. Compile and flash to DE10-Lite
+4. KEY[0] = Reset, KEY[1] = Enter
+5. SW[9] = Mode, SW[3:0] = PIN input
+
 # Hardware Platform
 
 - FPGA Board: Intel MAX 10 DE10-Lite
