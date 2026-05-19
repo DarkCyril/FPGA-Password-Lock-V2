@@ -143,6 +143,34 @@ Planned future versions may include:
 
 ---
 
+## Simulation Waveform
+
+The waveform below verifies the main FSM behavior of the Password Lock V2 design.
+
+![Simulation Waveform](docs/waveform.png)
+
+### Waveform Explanation
+
+- `CLK` drives the synchronous FSM logic.
+- `RST` initializes the system before normal operation begins.
+- `Enter` is pulsed to simulate user confirmation/button input.
+- `Mode` selects between normal password entry and password setup behavior.
+- `Pin_In` represents the 4-bit PIN input from the user.
+- `Saved_Pin` stores the programmed password value.
+- `LED` is used as a visual debug output for FSM state/status indication.
+
+During simulation, the design starts with the default saved PIN value `0xA`.  
+When setup mode is enabled and `Pin_In` is changed to `0xF`, the FSM updates `Saved_Pin` from `0xA` to `0xF`.  
+
+The LED output changes between state/status values such as `001`, `002`, `004`, and `200`, showing the FSM transitioning through idle, setup, check, and lock/unlock-related states.
+
+This waveform confirms:
+- reset behavior
+- mode-controlled password setup
+- saved PIN register update
+- FSM state transitions
+- LED-based state/status debugging
+  
 # Author
 
 Juan Diego Colón Flores  
