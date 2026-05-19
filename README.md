@@ -147,7 +147,7 @@ Planned future versions may include:
 
 The waveform below verifies the main FSM behavior of the Password Lock V2 design.
 
-![Simulation Waveform](docs/waveform.png)
+![Simulation Waveform](tb/waveform.png)
 
 ### Waveform Explanation
 
