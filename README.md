@@ -95,7 +95,7 @@ FPGA-Password-Lock-V2/
 │   └── password lock testbench files
 │
 └── README.md
-
+```
 ---
 
 # Features
