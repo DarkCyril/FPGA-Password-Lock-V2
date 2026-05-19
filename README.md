@@ -79,18 +79,22 @@ Result:
 - easier feature expansion
 
 ---
-
 # Project Structure
 
 ```text
 FPGA-Password-Lock-V2/
-├── password_lock_top.v
-├── password_fsm.v
-├── count_down.v
-├── testbench/
-├── docs/
+├── constraints/
+│   └── DE10-Lite pin assignments / constraint files
+│
+├── src/
+│   ├── password_lock_top.v
+│   ├── password_fsm.v
+│   └── count_down.v
+│
+├── tb/
+│   └── password lock testbench files
+│
 └── README.md
-```
 
 ---
 
